@@ -1,0 +1,30 @@
+---- add project to git -----
+>> git init
+
+---- get the status of the files, Like how many staged to commit, how many files changed, how many unstaged
+>> get status
+
+----- add all files to staged, to make them ready to commit ---
+>> git add -A
+
+----- add a specific file to staged state
+>> git add _fileAddress
+
+----- commit the files
+>> git commit -m "message: you may write anything"
+
+---- get the details of all commits you done
+>> git log
+
+---- go to previous version 
+>> git checkout {id of that commit , get it from git log}
+
+---- push to github
+>> git remote add origin https://github.com/.....
+>> git push -u origin main
+
+---- create new branch 
+>> git checkout -b newBranch_name
+
+---- rename master branch to main
+>> git branch -M main
