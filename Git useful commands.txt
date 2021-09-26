@@ -23,6 +23,9 @@
 >> git remote add origin https://github.com/.....
 >> git push -u origin main
 
+---- if you want to set a new origin
+>> git remote set-url origin https://github.com/your-other/repository
+
 ---- create new branch 
 >> git checkout -b newBranch_name
 
