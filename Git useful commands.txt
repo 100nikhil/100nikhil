@@ -26,6 +26,12 @@
 ---- if you want to set a new origin
 >> git remote set-url origin https://github.com/your-other/repository
 
+---- To fetch latest changes from origin (no merge)
+>> git fetch
+
+---- To fetch latest changes from origin and merge
+>> git pull
+
 ---- create new branch 
 >> git checkout -b newBranch_name
 
