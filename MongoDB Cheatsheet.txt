@@ -195,6 +195,9 @@ db.coll.find().readConcern("majority")
 >>db.coll.update({"_id": 1}, {$currentDate: {"lastModified": {$type: "timestamp"}}})
 
 // Array
+
+>>db.teacher.update({"experience":7},{$push:{"subjects":"Mathematics"}})
+//push new element into subjects array of teacher
 db.coll.update({"_id": 1}, {$push :{"array": 1}})
 db.coll.update({"_id": 1}, {$pull :{"array": 1}})
 db.coll.update({"_id": 1}, {$addToSet :{"array": 2}})
