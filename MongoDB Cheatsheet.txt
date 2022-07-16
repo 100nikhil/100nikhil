@@ -60,6 +60,15 @@ https://www.mongodb.com/developer/products/mongodb/cheat-sheet/
 >>db.coll.find({name: "Max", age: 32}) 
 // implicit logical "AND". display documents where name=max and age=32
 
+>>db.student.find({})
+//get all documents from collection, select * from student
+
+>>db.student.find({},{roll:1})
+//get only roll no of students, _id will be returned by default: select _id, roll from student
+
+>>db.student.find({}, {roll:1, _id:0})
+//select roll from student
+
 >>db.coll.find({date: ISODate("2020-09-25T13:57:17.180Z")})
 
 >>db.coll.find({name: "Max", age: 32}).explain("executionStats") 
